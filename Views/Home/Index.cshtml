@@ -1,0 +1,28 @@
+﻿
+@model AlphaDemo.ViewModel.HomeIndexViewModel
+
+@*<head>
+    <title>
+        
+    </title>
+</head>
+<body>*@
+    <h3> @Model.PageTitle </h3>
+    <table>
+        <tr>
+            <td>
+                ID
+            </td>
+            <td>
+                Test Data
+            </td>
+        </tr>
+        @foreach (var item in Model.SampleData)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.TestData</td>
+        </tr>
+        }
+    </table>
+@*</body>*@
